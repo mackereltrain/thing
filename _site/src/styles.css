@@ -1,0 +1,74 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Nuetra;
+  src: url('assets/nuetra/NeutraText-Book.otf');
+}
+
+@font-face {
+  font-family: Nuetra-Bold;
+  src: url('assets/nuetra/NeutraText-Bold.otf');
+}
+
+* {
+  margin: 0;
+  font-family: Nuetra;
+}
+
+h1 {
+  font-family: Nuetra-bold;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+h2 {
+  font-family: Nuetra-bold;
+  font-size: 32px;
+  padding-top: 5px;
+}
+
+h3 {
+  font-family: Nuetra-bold;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+    background: none;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    padding: 0px 5px;
+    height: 28px;
+    line-height: 24px;
+
+}
+
+.cdk-global-scrollblock {
+  position: fixed;
+}
+
+.header {
+  border-bottom: solid 2px black;
+  margin-bottom: 10px;
+}
+
+.subheader {
+  margin-bottom: 10px;
+  padding-top: 24px;
+}
+
+
+.cdk-overlay-pane {
+  max-width: min(800px, calc(100vw - 48px)) !important;
+}

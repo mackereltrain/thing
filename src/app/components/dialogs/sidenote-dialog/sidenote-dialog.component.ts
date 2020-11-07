@@ -9,10 +9,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class SidenoteDialogComponent {
     public title: string;
     public body: string;
+    public image: string = null;
 
-    constructor(@Inject(MAT_DIALOG_DATA) public data: { title: string, body: string }) {
+    constructor(@Inject(MAT_DIALOG_DATA) public data: { title: string, body: string, image: string }) {
         this.title = data.title;
         this.body = data.body;
+        this.image = data.image;
     }
 
 }

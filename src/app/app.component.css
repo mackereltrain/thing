@@ -1,9 +1,13 @@
 .section {
     text-align: justify;
     margin: auto;
-    padding: 24px;
+    padding: 0px 24px;
     max-width: 800px;
     font-size: 20px;
+}
+
+.section .header {
+    padding-top: 24px;
 }
 
 .section p {

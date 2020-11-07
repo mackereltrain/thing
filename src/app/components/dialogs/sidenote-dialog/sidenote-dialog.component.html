@@ -1,4 +1,5 @@
 <div class="header"><h3>{{ this.title }}</h3></div>
 <mat-dialog-content>
     <span style="white-space: pre-line">{{this.body}}</span>
+    <img *ngIf="this.image" src="{{this.image}}">
 </mat-dialog-content>

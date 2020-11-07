@@ -1,0 +1,13 @@
+<div [ngClass]="{'side-menu-container': true, 'open': this.opened}">
+    <div class="side-menu-header"><h2>Outline</h2></div>
+    <div class="outline">
+        <app-outline-section [label]="'Greet'" [selected]='true' (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Preface'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'The Breakup'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Relationship Problems'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Me Becoming Toxic'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Actually Breaking Up'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Post-Breakup'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+        <app-outline-section [label]="'Not Talking to You'" (clickEvent)="changeSection()" #outlineSection></app-outline-section>
+    </div>
+</div>

@@ -12,6 +12,7 @@ export class SidenoteComponent implements OnInit {
     @Input() text: string;
     @Input() title: string;
     @Input() body: string;
+    @Input() image: string = null;
     @Input() info = true;
 
     constructor(private dialog: MatDialog) { }
@@ -21,7 +22,7 @@ export class SidenoteComponent implements OnInit {
 
     openDialog() {
         this.dialog.open(SidenoteDialogComponent, {
-            data: { title: this.title, body: this.body },
+            data: { title: this.title, body: this.body, image: this.image },
         });
     }
 
