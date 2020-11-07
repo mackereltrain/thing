@@ -7,8 +7,8 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
     styleUrls: ['./sidenote-dialog.component.css']
 })
 export class SidenoteDialogComponent {
-    private title: string;
-    private body: string;
+    public title: string;
+    public body: string;
 
     constructor(@Inject(MAT_DIALOG_DATA) public data: { title: string, body: string }) {
         this.title = data.title;
