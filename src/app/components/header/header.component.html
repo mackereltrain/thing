@@ -1,0 +1,11 @@
+<app-side-menu #sideMenu (changedSection)="this.changedSection()"></app-side-menu>
+<div class="header">
+    <div class="nav-bar-element-container">
+        <div [ngClass]="{'hamburger': true, 'checked': this.checked, 'crossed': this.crossed}" (click)="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>

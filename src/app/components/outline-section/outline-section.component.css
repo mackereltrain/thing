@@ -1,0 +1,19 @@
+.outline-section {
+    padding: 10px;
+    transition: background-color ease-in-out 0.1s;
+    border-bottom: #dddddd 1px solid;
+}
+
+.outline-section.selected {
+    background-color: #eeeeee !important;
+}
+
+.outline-section:hover {
+    background-color: #f8f8f8;
+}
+
+.outline-section a {
+    text-decoration: none; /* no underline */
+    font-size: 20px;
+    position: relative;
+}
